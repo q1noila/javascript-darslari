@@ -1,0 +1,1 @@
+console.log('salom 1-dars')
