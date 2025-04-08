@@ -87,14 +87,49 @@
 // console.log(obj1)
 // console.log(obj2)
 
-const obj1={
+// const obj1={
+//     name:'Noila',
+//     fio:'Olimjanova',
+//     age:16,
+//     job:'student'
+// }
+
+// for(let i in obj1){           //faqat obj1 ni ichidagi value olishga ishlatiladi
+//     console.log(obj1[i])   
+// }
+// console.log(obj1)
+
+//destructing declaration
+// let name='Ruxshona'
+// const obj1={
+//     name:'Noila',
+//     fio:'Olimjanova',
+//     age:16,
+//     job:{jobname:'student'}
+// }
+// let {name: newname, job: {jobname:jobb}}=obj1   //name: newname-agar obj ni ichidagi o`zgaruvchi tashqaridagi o`zgaruvchi bilan bir xil bo`lsa shundan foydalansa bo`ladi
+// console.log(newname)
+// console.log(jobb)
+
+
+let obj1={
     name:'Noila',
     fio:'Olimjanova',
     age:16,
-    job:'student'
+    name2:{ism:'Fotima'},
+    // sayHi({job}){
+    //     console.log('salom',job)
+    // }
+    MainFunc(){
+        console.log(this.name2.ism) //buni qiymati obj1 ga teng
+        // console.log(obj1.name) //agar bu o`chib ketsa yoki qiymati null ga teng bo`lsa terminal xatolik beradi, shunga this ishlatiladi
+    }
 }
+// obj1.sayHi({job:"Designer",age:12})
 
-for(let i in obj1){           //faqat obj1 ni ichidagi value olishga ishlatiladi
-    console.log(obj1[i])   
-}
-console.log(obj1)
+let obj2=obj1
+obj1=null
+obj2.MainFunc()
+//Garbiche collection- bu javascriptda ishlatilinmayotgan obj larni avtomatik o`chirib tashlaydi
+///this-bu javascriptdagi eng katta objectlar bir va u qayerda ishlatilinsa qiymati o`sha yerga teng bo`ladi
+
