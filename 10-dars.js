@@ -173,32 +173,43 @@
 
 
 
-let obj1={
+// let obj1={
+//     name:'Noila',
+//     age:12,
+//     child:{
+//         childname:"Ali",
+//         age:99,
+//         child:{
+//             childname:"Aziz",
+//             age:1,
+//         }
+//     }
+// }
+// //obj1 ni ichidagi barcha age larni qo`shib chiqadi
+// let natija=0 
+// while(1){
+//     if(obj1){
+//         natija+=obj1.age
+//         // console.log(obj1.age)
+//     }
+//     else{
+//         break
+//     }
+//     obj1=obj1.child
+// }
+// console.log(natija)
+
+// // ↕ikkalasi bir xil
+// while(obj1){
+//     natija+=obj1.age
+//     obj1=obj1.child
+// }
+
+let obj={
     name:'Noila',
-    age:12,
-    child:{
-        childname:"Ali",
-        age:99,
-        child:{
-            childname:"Aziz",
-            age:1,
-        }
-    }
+    age:15,
+    job:'student'
 }
-let natija=0
-while(1){
-    if(obj1){
-        natija+=obj1.age
-        // console.log(obj1.age)
-    }
-    else{
-        break
-    }
-    obj1=obj1.child
-}
-console.log(natija)
-// ↕ikkalasi bir xil
-while(obj1){
-    natija+=obj1.age
-    obj1=obj1.child
-}
+// "..."-spread operatori, bu object ma`lumotlarini o1zgartirish uchun ishlatiladi "...obj" bu holda qiymatlarni tashqariga chiqaradi
+let newobj={...obj,gender:'women',fio:'Olimjanova'}
+console.log(newobj)
