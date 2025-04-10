@@ -99,7 +99,7 @@
 // }
 // console.log(obj1)
 
-//destructing declaration
+//destructure
 // let name='Ruxshona'
 // const obj1={
 //     name:'Noila',
@@ -112,24 +112,65 @@
 // console.log(jobb)
 
 
-let obj1={
+// let obj1={
+//     name:'Noila',
+//     fio:'Olimjanova',
+//     age:16,
+//     name2:{ism:'Fotima'},
+//     // sayHi({job}){
+//     //     console.log('salom',job)
+//     // }
+//     MainFunc(){
+//         console.log(this.name2.ism) //buni qiymati obj1 ga teng
+//         // console.log(obj1.name) //agar bu o`chib ketsa yoki qiymati null ga teng bo`lsa terminal xatolik beradi, shunga this ishlatiladi
+//     }
+// }
+// // obj1.sayHi({job:"Designer",age:12})
+
+// let obj2=obj1
+// obj1=null
+// obj2.MainFunc()
+// //Garbiche collection- bu javascriptda ishlatilinmayotgan obj larni avtomatik o`chirib tashlaydi
+// ///this-bu javascriptdagi eng katta objectlar bir va u qayerda ishlatilinsa qiymati o`sha yerga teng bo`ladi
+
+// let obj={
+//     name:'Noila',
+//     child:{
+//         baxo1:5,
+//         baxo2:2,
+//         baxo3:5
+//     }
+// }
+
+// // let son1=obj.child.baxo1+obj.child.baxo2+obj.child.baxo3
+
+// // let ob=function(){
+// //     return son1/3
+// // }
+// // console.log(ob())
+
+// let getData=({name,child:{baxo1,baxo2,baxo3}})=>{
+//     return `${name} ${(baxo1+baxo2+baxo3)/3}`
+// }
+// console.log(getData(obj))
+
+
+let obj={
     name:'Noila',
-    fio:'Olimjanova',
-    age:16,
-    name2:{ism:'Fotima'},
-    // sayHi({job}){
-    //     console.log('salom',job)
-    // }
-    MainFunc(){
-        console.log(this.name2.ism) //buni qiymati obj1 ga teng
-        // console.log(obj1.name) //agar bu o`chib ketsa yoki qiymati null ga teng bo`lsa terminal xatolik beradi, shunga this ishlatiladi
+    child:{
+        baxo1:5,
+        baxo2:2,
+        baxo3:5
+    },
+    son({name,child:{baxo1,baxo2,baxo3}}){
+        return `${name} ${(baxo1+baxo2+baxo3)/3}`
     }
 }
-// obj1.sayHi({job:"Designer",age:12})
 
-let obj2=obj1
-obj1=null
-obj2.MainFunc()
-//Garbiche collection- bu javascriptda ishlatilinmayotgan obj larni avtomatik o`chirib tashlaydi
-///this-bu javascriptdagi eng katta objectlar bir va u qayerda ishlatilinsa qiymati o`sha yerga teng bo`ladi
+let {son}=obj
+console.log(son(obj))
 
+
+
+
+// console.log(obj.son(obj))
