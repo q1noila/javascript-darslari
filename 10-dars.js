@@ -155,19 +155,50 @@
 // console.log(getData(obj))
 
 
-let obj={
+// let obj={
+//     name:'Noila',
+//     child:{
+//         baxo1:5,
+//         baxo2:2,
+//         baxo3:5
+//     },
+//     son({name,child:{baxo1,baxo2,baxo3}}){
+//         return `${name} ${(baxo1+baxo2+baxo3)/3}`
+//     }
+// }
+
+// let {son}=obj
+// console.log(son(obj))
+// // console.log(obj.son(obj))
+
+
+
+let obj1={
     name:'Noila',
+    age:12,
     child:{
-        baxo1:5,
-        baxo2:2,
-        baxo3:5
-    },
-    son({name,child:{baxo1,baxo2,baxo3}}){
-        return `${name} ${(baxo1+baxo2+baxo3)/3}`
+        childname:"Ali",
+        age:99,
+        child:{
+            childname:"Aziz",
+            age:1,
+        }
     }
 }
-
-let {son}=obj
-console.log(son(obj))
-
-// console.log(obj.son(obj))
+let natija=0
+while(1){
+    if(obj1){
+        natija+=obj1.age
+        // console.log(obj1.age)
+    }
+    else{
+        break
+    }
+    obj1=obj1.child
+}
+console.log(natija)
+// ↕ikkalasi bir xil
+while(obj1){
+    natija+=obj1.age
+    obj1=obj1.child
+}
