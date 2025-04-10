@@ -170,7 +170,4 @@ let obj={
 let {son}=obj
 console.log(son(obj))
 
-
-
-
 // console.log(obj.son(obj))
