@@ -67,23 +67,25 @@
 // console.log(num)
 // console.log(text)
 
-let test=['salom','nima gapla',1,2,3,'Ali',4]
+// let test=['salom','nima gapla',1,2,3,'Ali',4]
 
-test.map((element)=>{ //forEach bilan bir xil, farqi forEachda return ishlamaydi
-    console.log(element)
-})
+// test.map((element)=>{ //forEach bilan bir xil, farqi forEachda return ishlamaydi
+//     console.log(element)
+// })
 
-let newforEach=test.forEach((element)=>{ 
-    return element +200
-})
-console.log(newforEach) //undefined-chunki return ishlamaydi
+// let newforEach=test.forEach((element)=>{ 
+//     return element +200
+// })
+// console.log(newforEach) //undefined-chunki return ishlamaydi
 
-let newmap1=test.map((element)=>{
-    return element +200
-})
-console.log(newmap1)
+// let newmap1=test.map((element)=>{
+//     return element +200
+// })
+// console.log(newmap1)
 
-let newmap=test.map((element)=> element +200 //return bo`lsa shunday qisqacha yozsa bo`ladi
-)
-console.log(newmap)
+// let newmap=test.map((element)=> element +200 //return bo`lsa shunday qisqacha yozsa bo`ladi
+// )
+// console.log(newmap)
+
+let num=[12,5,7,1,2,4,6,7,2,9,11]
 
