@@ -87,5 +87,8 @@
 // )
 // console.log(newmap)
 
-let num=[12,5,7,1,2,4,6,7,2,9,11]
+let num=[12,5,7,1,2,4,6,7,2,9,11,'salom']
+
+let result=num.filter((element)=> element%2==0)
+console.log(result)
 
