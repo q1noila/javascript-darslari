@@ -1,3 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
-    background-color: black;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    position: relative;
+}
+.container img{   
+    width: 100%;
+    position: fixed;
+}
+.box{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 480px 480px 480px 480px;
+    grid-template-rows: 420px;
+    grid-auto-flow: dense;
+    /* border: 1px solid blue; */
+    gap: 20px;
+    color: white;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 600px;
+}
+.box div{
+    border-radius: 25px;
+    background-color: rgba(197, 195, 195, 0.249);
+}
+.box .b1{
+    grid-row: span 11;
+}
+.box .b1-2{
+    grid-row: span 34;
+}
+.box .square{
+    grid-row: span 1;
+}
+.box .b2{
+    grid-column: span 2;
+    grid-row: span 17;
+}
+.box .b2-2{
+    grid-column: span 2;
+    grid-row: span 17;
+}
+.box .square-2{
+    grid-row: span 22;
+}
+.box .square-3{
+    grid-row: span 22;
+}
+.box div:hover{
+    border: 1px solid white;
 }
