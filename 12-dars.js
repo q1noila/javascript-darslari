@@ -87,8 +87,25 @@
 // )
 // console.log(newmap)
 
-let num=[12,5,7,1,2,4,6,7,2,9,11,'salom']
+// let num=[12,5,7,1,2,4,6,7,2,9,11,'salom']
 
-let result=num.filter((element)=> element%2==0)
-console.log(result)
+// let result=num.filter((element)=> element%2==0)
+// console.log(result)
+
+// ===================================================
+// let test=['salom','nima gapla',1,2,3,'Ali',4]
+// for(item in test){
+//     console.log(test[item])
+// }
+// for(item of test){
+//     console.log(item)
+// }
+
+let arr=[1,2,3,4,5]
+arr.splice(0,2)
+console.log(arr)
+// ↕ikkalssini farqi splice asl arrayni o`zgartiradi slice esa o`zgartirmaydi,slice alohida o`zgaruvchiga olish kerak
+let arr1=[1,2,3,4,5]
+let arr12=arr.slice(1,3)
+console.log(arr12)
 
