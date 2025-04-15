@@ -101,11 +101,34 @@
 //     console.log(item)
 // }
 
-let arr=[1,2,3,4,5]
-arr.splice(0,2)
-console.log(arr)
-// ↕ikkalssini farqi splice asl arrayni o`zgartiradi slice esa o`zgartirmaydi,slice alohida o`zgaruvchiga olish kerak
-let arr1=[1,2,3,4,5]
-let arr12=arr.slice(1,3)
-console.log(arr12)
+// let arr=[1,2,3,4,5]
+// arr.splice(0,2)
+// console.log(arr)
+// // ↕ikkalssini farqi splice asl arrayni o`zgartiradi slice esa o`zgartirmaydi,slice alohida o`zgaruvchiga olish kerak
+// let arr1=[1,2,3,4,5]
+// let arr12=arr.slice(1,3)
+// console.log(arr12)
+
+// let arr2=[1,2,3,4,5,6,2,7]
+// console.log(arr2.indexOf(4)) //qiymat arrayni ichida bo`lsa indexini chiqarib beradi, agar bo`lmasa "-1"ni chiqaradi
+// console.log(arr2.indexOf(2,3))//bunda 1chi qiymat qidirilayotga son 2chi qiymat nechanchi indexdan keyin qidirilishini belgilaydi 
+
+// console.log(arr2.lastIndexOf(2)) //bu ohiridan birinchi kiritgan qiymatimizni topadi
+// console.log(arr2.includes(2))//qidiradi
+
+// let name='Noila' 
+// let newArr=name.split()
+// console.log(newArr) //elementni stringdan arrayga o`zgartirish
+
+// newArr.map((i)=>(console.log(i)))
+
+let name='taraqqiyot'
+let name1=name.split("")
+// let i=0
+// name1.map((i)=>(console.log(i)))
+if (name1.map((i)=>(console.log(i)))==i)console.log(+1)
+// console.log(name1)
+
+
+
 

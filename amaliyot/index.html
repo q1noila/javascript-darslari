@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+
+    .contaiter {
+        box-shadow: 0 0 10px silver;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2px;
+        min-height: 300px;
+    }
+
+    .kino {
+        border: 3px solid orange;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .kino img {
+        width: 100%;
+    }
+</style>
+
+<body>
+    <h1>Kinolar</h1>
+    <div class="wrapper">
+        <select id="selectJanr" onclick="getSelectData()">
+            <option value="barchasi">barchasi</option>
+            <option value="Fantastika / Komediya">Fantastika / Komediya</option>
+            <option value="Fantastika / Aksiya">Fantastika / Aksiya</option>
+            <option value="Ilmiy fantastika / Sarguzasht">Ilmiy fantastika / Sarguzasht</option>
+            <option value="Aksiya / Triller">Aksiya / Triller</option>
+            <option value="Aksiya / Video o‘yin">Aksiya / Video o‘yin</option>
+            <option value="Anime / Drama">Anime / Drama</option>
+            
+            
+        </select>
+        <div class="contaiter" id="contaiter">
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
