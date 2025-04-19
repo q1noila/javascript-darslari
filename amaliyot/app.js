@@ -74,6 +74,7 @@ function kinolarData(data) {
                 <p>janri: ${item.janr}</p>
                 <p>yili: ${item.yili}</p>
                 </div>`
+                
     ))
 }
 

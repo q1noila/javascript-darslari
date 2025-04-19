@@ -13,26 +13,47 @@
         font-family: sans-serif;
         box-sizing: border-box;
     }
-
+    body{
+        background-color: rgb(229, 229, 229);
+        padding: 30px 20px;
+    }
+    h1{
+        font-size: 48px;
+        padding-left: 21px;
+    }
+    .wrapper select{
+        width: 250px;
+        height: 40px;
+        font-size:18px;
+        margin-left: 21px;
+        border: none;
+        border-radius: 10px;
+        /* background-color: red; */
+    }
     .contaiter {
-        box-shadow: 0 0 10px silver;
+        box-shadow: 0 0 10px rgb(156, 156, 156);
         padding: 10px;
         margin: 20px;
         border-radius: 10px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2px;
+        gap: 10px;
         min-height: 300px;
+        background-color: rgba(119, 136, 153, 0.53);
     }
 
     .kino {
         border: 3px solid orange;
         padding: 10px;
         border-radius: 10px;
+        max-width: 1000px;
+        justify-content: center;
+        align-items: center;
     }
 
     .kino img {
         width: 100%;
+        max-width: 1000px;
     }
 </style>
 
@@ -47,6 +68,7 @@
             <option value="Aksiya / Triller">Aksiya / Triller</option>
             <option value="Aksiya / Video o‘yin">Aksiya / Video o‘yin</option>
             <option value="Anime / Drama">Anime / Drama</option>
+            <option value="Ilmiy fantastika">Ilmiy fantastika</option>
             
             
         </select>

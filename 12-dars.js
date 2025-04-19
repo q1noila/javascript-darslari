@@ -101,13 +101,13 @@
 //     console.log(item)
 // }
 
-// let arr=[1,2,3,4,5]
-// arr.splice(0,2)
-// console.log(arr)
-// // ↕ikkalssini farqi splice asl arrayni o`zgartiradi slice esa o`zgartirmaydi,slice alohida o`zgaruvchiga olish kerak
-// let arr1=[1,2,3,4,5]
-// let arr12=arr.slice(1,3)
-// console.log(arr12)
+let arr=[1,2,3,4,5]
+arr.splice(1,2)
+console.log(arr)
+// ↕ikkalssini farqi splice asl arrayni o`zgartiradi slice esa o`zgartirmaydi,slice alohida o`zgaruvchiga olish kerak
+let arr1=[1,2,3,4,5]
+let arr12=arr.slice(0,2)
+console.log(arr12)
 
 // let arr2=[1,2,3,4,5,6,2,7]
 // console.log(arr2.indexOf(4)) //qiymat arrayni ichida bo`lsa indexini chiqarib beradi, agar bo`lmasa "-1"ni chiqaradi
@@ -122,12 +122,25 @@
 
 // newArr.map((i)=>(console.log(i)))
 
-let name='taraqqiyot'
-let name1=name.split("")
-// let i=0
-// name1.map((i)=>(console.log(i)))
-if (name1.map((i)=>(console.log(i)))==i)console.log(+1)
-// console.log(name1)
+// let name = 'taraqqiyot';
+// name = name.toLowerCase()
+// let harflar = {}
+// for (let i = 0; i < name.length; i++) {
+//     let harf = name[i]
+
+//     if (harflar[harf]) {
+//         harflar[harf] += 1
+//     } else {
+//         harflar[harf] = 1
+//     }
+// }
+// for (let harf in harflar) {
+//     console.log(harf, " : ", harflar[harf]);
+// }
+
+// // =============================================================
+
+
 
 
 
