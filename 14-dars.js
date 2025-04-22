@@ -24,7 +24,6 @@
 // soz=soz.trim()//boshidagi va oxiridagi bo`sh joylani olib tashlaydi
 // console.log(soz.split("")) //so`zlarni alohida element qilib arrayga o`zgartiradi
 
-
 // console.log('nima'.repeat(100))  //repeat(n) so`zni n marta takrorlash
 // console.log("salom".concat(" do'stim", 'nima gapla'))  //sozlarni qo`shish uchun
 // ↕ikkalasi bir xil 
