@@ -20,21 +20,31 @@
 // box.innerHTML += `<h1>yangi teg</h1>`
 // console.log(box)
 
-const title=document.querySelector('.title') //class bilan olish
-const box=document.getElementById('box')//id bilan olish
-const addTeg=document.getElementById('addTeg')
+// const title=document.querySelector('.title') //class bilan olish
+// const box=document.getElementById('box')//id bilan olish
+// const addTeg=document.getElementById('addTeg')
 
-title.textContent += " dom" //matnni o`zgartirish
-title.innerHTML += "<h1>DOM</h1> <i>salom</i>"  //yangi html qo`shish
-title.className+= " yangi" //class qo`shish
-console.log(title)
+// title.textContent += " dom" //matnni o`zgartirish
+// title.innerHTML += "<h1>DOM</h1> <i>salom</i>"  //yangi html qo`shish
+// title.className+= " yangi" //class qo`shish
+// console.log(title)
 
-addTeg.addEventListener('click',()=>{ //button bosilganda 
-    title.className = 'title'
+// addTeg.addEventListener('click',()=>{ //button bosilganda 
+//     title.className = 'title'
+// })
+
+// document.addEventListener('keydown', (key)=>{
+//     title.textContent += key.key //klaviaturadan bosilgan tugma
+// })
+
+const change=document.getElementById('change')
+const box1=document.getElementById('box1')
+
+// box1.classList.add('text') //class qo`shish
+// box1.classList.remove('text')//classni o`chirish
+// box1.classList.toggle('text') //class bo`lsa o`chirish bo`lmasa qo`shish
+
+document.addEventListener('click', ()=>{
+    change.classList.toggle('text')
 })
-
-document.addEventListener('keydown', (key)=>{
-    title.textContent += key.key //klaviaturadan bosilgan tugma
-})
-
-
+console.log(change)
