@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: url(./img.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.262);
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 70%;
+    overflow: hidden;
+}
+.header{
+    background-color: rgba(255, 255, 255, 0.477);
+    font-size: 20px;
+    padding: 15px 15px;
+}
+.small-box{
+    background-color: rgba(255, 255, 255, 0.427);
+    padding: 15px 25px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 97%;
+    height: 100%;
+    text-align: start;
+    display: block;
+    overflow: auto;
+}
+.small-box table{
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+}
+.small-box td{
+    padding: 10px 50px;
+}
+
+
+.small-box td img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.card tr td{
+    display: flex;
+    justify-content: space-around;
+}
+table tr th{
+    background-color: rgba(255, 255, 255, 0.427);
+    padding: 10px 10px;
+}
+.shipped p{
+    background-color: skyblue;
+    width: 140%;
+    display: flex;
+    justify-content: center;
+    padding: 7px 0px;
+    border-radius: 20px;
+}
