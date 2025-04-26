@@ -116,9 +116,9 @@
 // console.log(arr2.lastIndexOf(2)) //bu ohiridan birinchi kiritgan qiymatimizni topadi
 // console.log(arr2.includes(2))//qidiradi, bor bo`lsa true, yo`q bo`lsa false qaytaradi
 
-// let name='Noila' 
-// let newArr=name.split()
-// console.log(newArr) //elementni stringdan arrayga o`zgartirish
+let name='Noila' 
+let newArr=name.split()
+console.log(newArr) //elementni stringdan arrayga o`zgartirish
 
 // newArr.map((i)=>(console.log(i)))
 

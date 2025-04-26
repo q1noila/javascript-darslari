@@ -14,9 +14,9 @@
 // console.log(sum)
 
 // // do while
-// let i=0
-// do{
-//     console.log('salom')
-//     i++
-// }while(i<3)
+let i=0
+do{
+    console.log('salom')
+    i++
+}while(i<3)
 

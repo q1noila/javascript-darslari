@@ -44,7 +44,26 @@ const box1=document.getElementById('box1')
 // box1.classList.remove('text')//classni o`chirish
 // box1.classList.toggle('text') //class bo`lsa o`chirish bo`lmasa qo`shish
 
-document.addEventListener('click', ()=>{
-    change.classList.toggle('text')
+// document.addEventListener('click', ()=>{
+//     change.classList.toggle('text')
+// })
+// console.log(change)
+
+// =====================================h/w===================================
+const container=document.querySelector('.container')
+const card1=document.querySelector('.card1')
+const card2=document.querySelector('.card2')
+const card3=document.querySelector('.card3')
+const btn=document.getElementById('btn')
+const card4=document.querySelector('.card4')
+
+btn.addEventListener('click', ()=>{
+    container.className = 'container2'
+    card1.className = 'card4'
+    card2.className = 'card4'
+    card3.className = 'card4'
 })
-console.log(change)
+
+card4.addEventListener('click', ()=>{
+    card4.className='card5'
+})
