@@ -1,0 +1,31 @@
+#box{
+    width: 200px;
+    height: 100px;
+    background: orange;
+    padding: 20px;
+}
+.box1{
+    background-color: red;
+}
+.box1 h1{
+    color: white;
+}
+
+.textBox{
+    background-color: yellowgreen;
+}
+.usersList{
+    border: 2px solid blue;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+.usersList li{
+    color: blue;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.usersList2{
+    background-color: lime;
+    color: white;
+}
