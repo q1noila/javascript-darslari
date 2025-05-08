@@ -27,7 +27,13 @@ document.body.appendChild(card)
 
 box.onclick=(element)=>{
     card.style.cssText=`
-    transform:translateX(${element.x-10}px) translateY(${element.y-100}px);
+    transform:translateX(${element.x-5}px) translateY(${element.y-100}px);
     `
     console.log('salom')
 }
+
+
+// bu yerga funksiya yozamiz h/m
+
+
+
