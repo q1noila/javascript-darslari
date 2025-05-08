@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --bodyBg:#f5fffd;
+    --color:rgb(58, 55, 55);
+    --borderColor:#797777;
+    --cardBgcolor :white;
+    --shodow:silver;
+}
+
+.dark-mode{
+    --bodyBg:#000000;
+    --color:white;
+    --borderColor:#c9c7c7;
+    --cardBgcolor: #1d1a1a;
+    --shodow:black;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background-color: var(--bodyBg);
+    color:var(--color) ;
+}
+aside{
+    width: 300px;
+    padding: 20px;
+    border-right: 2px solid var(--borderColor);
+}
+main{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    
+}
+.main1{
+    background:var(--cardBgcolor);
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 0 10px var(--shodow);
+    overflow: hidden;
+    border-top:1px solid #727272 ;
+}
+.main1 img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.main1 p{
+    margin: 10px;
+    font-size: 20px;
+    line-height: 28px;
+}
+.main1 h1{
+    margin: 10px;
+}
+.main1 h2{
+    margin: 10px;
+}
+.navigate{
+    background-color: var(--cardBgcolor);
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--shodow);
+    border-radius: 5px;
+
+}
+
+
+.Maincomments p{
+    background-color: var(--cardBgcolor);
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--shodow);
+    min-height: 60px;
+    border-radius: 5px;
+}
+
+#darkBtn{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+    padding: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.1s;
+    background-color: var(--cardBgcolor);
+    color: var(--color);
+    box-shadow: 0 0 10px var(--shodow);
+}
+#darkBtn:active{
+    transform: scale(0.8);
+}
