@@ -1,4 +1,3 @@
-
 import { products } from './data.js'
 const sidebar = document.getElementById('sidebar')
 const main = document.getElementById('main')
@@ -54,6 +53,7 @@ let toogle = false
 const darkBtn = document.getElementById('darkBtn')
 darkBtn.onclick = () => {
     toogle = !toogle
-    darkBtn.innerHTML =   toogle ? <ion-icon name="sunny-outline"></ion-icon>:'<ion-icon name="moon-outline"></ion-icon>'
+    darkBtn.innerHTML =   toogle ? `<ion-icon name="sunny-outline"></ion-icon>`:`<ion-icon name="moon-outline"></ion-icon>`
     document.body.classList.toggle('dark-mode')
 }
+
