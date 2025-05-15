@@ -17,19 +17,18 @@ plus.addEventListener('click',()=>{
         img.src=arr[result]
         console.log(result)
     }
-})
-
-clear.addEventListener('click',()=>{
-    result=0
-    img.src=arr[result]
-    console.log(result)
+    if(result>0){
+        minus.classList.remove('disabled')
+    }
 })
 
 minus.addEventListener('click',()=>{
     if(result==0){
+        minus.classList.add('disabled')
         console.log(result)
     }
     else if(result>0){
+        minus.classList.remove('disabled')
         result--
         img.src=arr[result]
         console.log(result)
