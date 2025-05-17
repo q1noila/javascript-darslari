@@ -1,8 +1,11 @@
+const box=document.querySelector(".box");
+const image=document.querySelector(".image");
 const plus=document.getElementById("plus");
 const minus=document.getElementById("minus");
-const clear=document.getElementById("clear");
-// const count=document.getElementById("count");
-const img=document.getElementById("img");
+
+let img=document.createElement('img')
+image.append(img)
+img.setAttribute('id','img')
 
 arr=['./images/asus.png','./images/bg.png','./images/dron.png','./images/goPro.png','./images/ipad.png','./images/iphone.png','./images/mac.png','./images/play.png','./images/pods.png','./images/samsung.png','./images/sony.png']
 
@@ -20,6 +23,12 @@ plus.addEventListener('click',()=>{
     if(result>0){
         minus.classList.remove('disabled')
     }
+
+    img.classList.add('hover')        
+    
+    setTimeout(()=>{
+        img.classList.remove('hover')
+    },300)
 })
 
 minus.addEventListener('click',()=>{
@@ -33,5 +42,10 @@ minus.addEventListener('click',()=>{
         img.src=arr[result]
         console.log(result)
     }
+    img.classList.add('hover')        
+    
+    setTimeout(()=>{
+        img.classList.remove('hover')
+    },300)
     
 })
