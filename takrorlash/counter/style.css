@@ -32,6 +32,9 @@ body{
     opacity:60%;
 
 }
+.start{
+    opacity: 0%;
+}
 .hover{
     opacity: 0%;
 }

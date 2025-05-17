@@ -28,7 +28,7 @@ plus.addEventListener('click',()=>{
     
     setTimeout(()=>{
         img.classList.remove('hover')
-    },300)
+    },600)
 })
 
 minus.addEventListener('click',()=>{
