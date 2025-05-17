@@ -1,24 +1,35 @@
-body{
+body {
     background-color: rgb(0, 0, 60);
 }
-.box{
+
+.box {
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-#img{
+
+#img {
     width: 700px;
     height: 500px;
     object-fit: cover;
     border: 1px solid white;
     border-radius: 20px;
     margin-top: 100px;
-    transition: 0.5s ease-out;
+    animation: 1s animate linear;
+}
+@keyframes animate {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
-.box .btn{
+.box .btn {
     width: 50px;
     height: 50px;
     margin-top: 130px;
@@ -28,14 +39,6 @@ body{
     color: white;
     font-size: 26px;
 }
-.disabled{
-    opacity:60%;
-
+.disabled {
+    opacity: 60%;
 }
-.start{
-    opacity: 0%;
-}
-.hover{
-    opacity: 0%;
-}
-

@@ -23,12 +23,6 @@ plus.addEventListener('click',()=>{
     if(result>0){
         minus.classList.remove('disabled')
     }
-
-    img.classList.add('hover')        
-    
-    setTimeout(()=>{
-        img.classList.remove('hover')
-    },600)
 })
 
 minus.addEventListener('click',()=>{
@@ -41,11 +35,5 @@ minus.addEventListener('click',()=>{
         result--
         img.src=arr[result]
         console.log(result)
-    }
-    img.classList.add('hover')        
-    
-    setTimeout(()=>{
-        img.classList.remove('hover')
-    },300)
-    
+    }    
 })
