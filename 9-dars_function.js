@@ -112,5 +112,3 @@
 //     console.log(`15 teng`,teng)
 // }
 // hisobla(12+3)
-
-
